@@ -19,7 +19,7 @@ export const createStory = async (req, res) => {
 
   try {
     await newStory.save();
-    res.status(201).json(newStory);
+    res.status(201).json({ message: "Story was created!" });
   } catch (error) {
     res.status(409).json({ message: error.message });
   }

@@ -6,25 +6,21 @@ const storySchema = mongoose.Schema(
       type: String,
       required: true,
       trim: true,
-      minlength: 3,
     },
     creator: {
       type: String,
       required: true,
       trim: true,
-      minlength: 3,
     },
     story: {
       type: String,
       required: true,
       trim: true,
-      minlength: 3,
     },
-    story_image: {
+    image: {
       type: String,
-      required: true,
       trim: true,
-      minlength: 3,
+      required: true,
     },
     likeCount: {
       type: Number,
